@@ -31,10 +31,10 @@ export default describe('canReconfigure', () : void=>{
     //     expect(canReconfigure).toBeTypeOf('function')
     // })
     it('should throw if first parameter is missing', ():void => {
-        expect(() : boolean => canReconfigure()).toThrow()
+        expect(() : boolean => canReconfigure(2,3)).toThrow()
     })
     it('should throw if first parameter is not a string', ():void => {
-        expect(() : boolean => canReconfigure(2)).toThrow()
+        expect(() : boolean => canReconfigure(2,3)).toThrow()
     })
     
     it('should throw if second parameter is not a string', ():void => {
